@@ -1,5 +1,5 @@
 <template>
-    <div class="container d-flex background" style="height: 80vh;">
+    <div class="container d-flex background" style="height: 100vh;">
         <div class="row d-flex">
             <div class=" col-12 col-sm-5 d-flex align-items-center">
                 <img src="../assets/profile-picture.png" alt="">

@@ -14,8 +14,7 @@ export default {
 </script>
 
 <template>
-    <div class="background vh-100">
-        <Header></Header>
+    <div class="background">
         <Main></Main>
         <Footer></Footer>
     </div>
