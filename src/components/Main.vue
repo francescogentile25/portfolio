@@ -2,16 +2,20 @@ User
 <template>
     <Profile></Profile>
     <AboutMe></AboutMe>
+    <Technologies></Technologies>
 </template>
   
 <script>
 import Profile from './Profile.vue';
 import AboutMe from './AboutMe.vue';
+import Technologies from './Technologies.vue';
 
 export default {
     components: {
         Profile,
         AboutMe,
+        Technologies,
+
     }
 };
 </script>
