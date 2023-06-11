@@ -5,30 +5,9 @@
                 <div class="col">
                     <h1 class="title mb-5">Le mie <span class="skill">skill</span></h1>
                     <div class="icon-card-container">
-                        <div class="row">
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <img class="icon" src="../assets/icon/html-icon.svg" alt="">
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <img class="icon" src="../assets/icon/css-icon.svg" alt="">
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <img class="icon" src="../assets/icon/bootstrap-5-logo-icon.svg" alt="">
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <img class="icon" src="../assets/icon/javascript-programming-language-icon.svg" alt="">
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <img class="icon" src="../assets/icon/vue-js-icon.svg" alt="">
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <img class="icon" src="../assets/icon/php-programming-language-icon.svg" alt="">
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <img class="icon" src="../assets/icon/laravel-icon.svg" alt="">
-                            </div>
-                            <div class="col-6 col-md-4 col-lg-3">
-                                <img class="icon" src="../assets/icon/mysql-icon.svg" alt="">
+                        <div class="row justify-content-center">
+                            <div class="col-6 col-md-4 col-lg-3  " v-for="image in images">
+                                <img class="icon" :src="image.src" alt="">
                             </div>
                         </div>
                     </div>
@@ -40,7 +19,51 @@
 
 <script>
 export default {
+    data() {
+        return {
+            images: [
+                {
+                    id: 1,
+                    src: "/src/assets/icon/html-icon.svg"
+                },
+                {
+                    id: 2,
+                    src: "/src/assets/icon/css-icon.svg"
+                },
+                {
+                    id: 3,
+                    src: "/src/assets/icon/bootstrap-5-logo-icon.svg"
+                },
+                {
+                    id: 4,
+                    src: "/src/assets/icon/javascript-programming-language-icon.svg"
+                },
+                {
+                    id: 5,
+                    src: "/src/assets/icon/vue-js-icon.svg"
+                },
+                {
+                    id: 6,
+                    src: "/src/assets/icon/php-programming-language-icon.svg"
+                },
+                {
+                    id: 7,
+                    src: "/src/assets/icon/laravel-icon.svg"
+                },
+                {
+                    id: 8,
+                    src: "/src/assets/icon/mysql-icon.svg"
+                },
+                {
+                    id: 9,
+                    src: "/src/assets/icon/sass-icon.svg"
+                },
 
+
+
+            ]
+        }
+    }
 }
 </script>
 
