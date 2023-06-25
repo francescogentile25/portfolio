@@ -22,9 +22,9 @@ export default {
     mounted() {
         const options = {
             strings: [
-                'Full Stack Developer',
                 'Front-End Developer',
                 'Back-End Developer',
+                'Full Stack Developer',
             ],
             typeSpeed: 100,
             startDelay: 0,

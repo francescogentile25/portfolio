@@ -1,12 +1,12 @@
 <template>
-    <div class="container-fluid d-flex align-items-center">
+    <div class="container-fluid d-flex align-items-center" id="skill">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h1 class="title mb-5">Le mie <span class="skill">skill</span></h1>
                     <div class="icon-card-container">
                         <div class="row justify-content-center">
-                            <div class="col-6 col-md-4 col-lg-3  " v-for="image in images">
+                            <div class="col-6 col-md-4 col-lg-3 d-flex justify-content-center" v-for="image in images">
                                 <img class="icon" :src="image.src" alt="">
                             </div>
                         </div>
@@ -76,11 +76,7 @@ export default {
     height: 100vh;
 }
 
-.icon-card {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
+
 
 .icon {
     filter: grayscale(1);

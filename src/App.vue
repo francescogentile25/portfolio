@@ -5,8 +5,8 @@ import Footer from './components/Footer.vue';
 
 export default {
     components: {
-        Main,
         Header,
+        Main,
         Footer
     },
 
@@ -15,6 +15,7 @@ export default {
 
 <template>
     <div class="background">
+        <Header></Header>
         <Main></Main>
         <Footer></Footer>
     </div>
